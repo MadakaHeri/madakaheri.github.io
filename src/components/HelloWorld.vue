@@ -1,31 +1,31 @@
 <template>
   <v-container>
     <v-row class="text-center">
-      <v-col cols="12">
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        />
-      </v-col>
-
-      <v-col class="mb-4">
+      <v-col class="my-4">
         <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
+          Welcome to MadakaHeri
         </h1>
 
         <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
+          このサイトは作りかけです。
         </p>
       </v-col>
 
-      <v-col
+      <v-col cols="12" class="mb-4">
+        <v-avatar
+          color="primary"
+          size="128"
+        >
+          <v-img
+            :src="require('../assets/avator.png')"
+            class="my-3"
+            contain
+            height="200"
+          />
+        </v-avatar>
+      </v-col>
+
+      <!-- <v-col
         class="mb-5"
         cols="12"
       >
@@ -44,9 +44,9 @@
             {{ next.text }}
           </a>
         </v-row>
-      </v-col>
+      </v-col> -->
 
-      <v-col
+      <!-- <v-col
         class="mb-5"
         cols="12"
       >
@@ -65,9 +65,9 @@
             {{ link.text }}
           </a>
         </v-row>
-      </v-col>
+      </v-col> -->
 
-      <v-col
+      <!-- <v-col
         class="mb-5"
         cols="12"
       >
@@ -86,7 +86,8 @@
             {{ eco.text }}
           </a>
         </v-row>
-      </v-col>
+      </v-col> -->
+
     </v-row>
   </v-container>
 </template>
