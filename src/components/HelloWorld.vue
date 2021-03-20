@@ -1,17 +1,18 @@
 <template>
   <v-container>
-    <v-row class="text-center">
-      <v-col class="my-4">
+    <v-row class="mt-8">
+      <v-col cols="3">
+        
+      </v-col>
+      <!-- <v-divider vertical></v-divider> -->
+      <v-col cols="6" class="text-center mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to MadakaHeri
+          マダカヘリの遊び場
         </h1>
 
         <p class="subheading font-weight-regular">
           このサイトは作りかけです。
         </p>
-      </v-col>
-
-      <v-col cols="12" class="mb-4">
         <v-avatar
           color="primary"
           size="128"
@@ -23,6 +24,10 @@
             height="200"
           />
         </v-avatar>
+      </v-col>
+      <!-- <v-divider vertical></v-divider> -->
+      <v-col cols="3">
+        
       </v-col>
 
       <!-- <v-col
@@ -88,6 +93,11 @@
         </v-row>
       </v-col> -->
 
+    </v-row>
+    <v-row>
+      <v-col class="d-flex justify-center">
+        <a class="twitter-timeline" data-lang="ja" data-width="400" data-height="600" data-theme="dark" href="https://twitter.com/MadakaHeri?ref_src=twsrc%5Etfw">Tweets by MadakaHeri</a>
+      </v-col>
     </v-row>
   </v-container>
 </template>
