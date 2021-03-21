@@ -1,12 +1,8 @@
 <template>
   <v-container>
     <v-row class="mt-8">
-      <v-col cols="3">
-        
-      </v-col>
-      <!-- <v-divider vertical></v-divider> -->
-      <v-col cols="6" class="text-center mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
+      <v-col class="text-center mb-4">
+        <h1 class="display-1 font-weight-bold mb-3">
           マダカヘリの遊び場
         </h1>
 
@@ -24,10 +20,6 @@
             height="200"
           />
         </v-avatar>
-      </v-col>
-      <!-- <v-divider vertical></v-divider> -->
-      <v-col cols="3">
-        
       </v-col>
 
       <!-- <v-col
