@@ -155,6 +155,11 @@
       </v-list>
 
       <template v-slot:append>
+        <aside class="text-center pa-4">
+          <v-btn small @click="isDarkMode = !isDarkMode">
+            <v-icon small>mdi-brightness-6</v-icon>
+          </v-btn>
+        </aside>
         <footer class="text-center pa-4">
           <small>
             Copyright &copy MadakaHeri
@@ -214,8 +219,23 @@ export default {
     HelloWorld,
   },
 
+  created(){
+    this.isDarkMode = JSON.parse(localStorage.getItem('isDarkMode')) || false
+  },
+
   data: () => ({
     drawer: true,
   }),
+  computed: {
+    isDarkMode: {
+      get(){
+        return this.$vuetify.theme.dark
+      },
+      set(val){
+        this.$vuetify.theme.dark = val
+        localStorage.setItem('isDarkMode', JSON.stringify(val))
+      },
+    },
+  },
 };
 </script>
