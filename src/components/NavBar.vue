@@ -140,13 +140,31 @@
       </v-list-item>
     </v-list>
 
+    <v-list
+      dense
+      nav
+    >
+      <v-subheader>CREDITS</v-subheader>
+      <v-list-item
+        link
+        to="/credits"
+      >
+        <v-list-item-icon>
+          <v-icon>mdi-decagram</v-icon>
+        </v-list-item-icon>
+        <v-list-item-content>
+          <v-list-item-title>このサイトについて</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+    </v-list>
+
     <template v-slot:append>
       <aside class="text-center pa-4">
         <v-btn small @click="frame_isDarkMode = !frame_isDarkMode">
           <v-icon small>mdi-brightness-6</v-icon>
         </v-btn>
       </aside>
-      <footer class="text-center pa-4">
+      <footer class="text-center text--disabled pa-4">
         <small>
           Copyright &copy MadakaHeri
         </small>
