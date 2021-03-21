@@ -15,7 +15,7 @@ module.exports = {
   pages: {
     index: {
       entry: "src/main.js",
-      title: "Madaka Heri Officail",
+      title: "MadakaHeri",
     }
   },
 }
