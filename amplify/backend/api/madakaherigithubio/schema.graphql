@@ -1,0 +1,32 @@
+enum PostType {
+  ARTICLE
+  MESSAGE
+  REPLY
+  SHARE
+  CLIP
+}
+
+enum PostContentType {
+  MARKDOWN
+  TEXT
+  MOVIE
+  SOUND
+  IMAGE
+}
+
+type PostCategory @model @auth(rules: [{allow: public, operations: [read]}]) {
+  id: ID!
+  name: String!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime
+}
+
+type Post @model @key(name: "byPostCategory", fields: ["postCategoryId"]) @auth(rules: [{allow: public, operations: [read]}]) {
+  id: ID!
+  PostType: PostType!
+  PostContentType: PostContentType!
+  postCategoryId: ID
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime
+  data: String
+}

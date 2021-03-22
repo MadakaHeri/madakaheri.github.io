@@ -2,11 +2,27 @@
 import { initSchema } from '@aws-amplify/datastore';
 import { schema } from './schema';
 
+const PostType = {
+  "ARTICLE": "ARTICLE",
+  "MESSAGE": "MESSAGE",
+  "REPLY": "REPLY",
+  "SHARE": "SHARE",
+  "CLIP": "CLIP"
+};
 
+const PostContentType = {
+  "MARKDOWN": "MARKDOWN",
+  "TEXT": "TEXT",
+  "MOVIE": "MOVIE",
+  "SOUND": "SOUND",
+  "IMAGE": "IMAGE"
+};
 
-const { BlogPostComment, BlogPost } = initSchema(schema);
+const { PostCategory, Post } = initSchema(schema);
 
 export {
-  BlogPostComment,
-  BlogPost
+  PostCategory,
+  Post,
+  PostType,
+  PostContentType
 };
