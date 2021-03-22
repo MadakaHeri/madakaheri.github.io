@@ -3,6 +3,10 @@ import lodash from 'lodash'
 window.axios = axios
 window._ = lodash
 
+import Amplify, { API, graphqlOperation } from 'aws-amplify';
+import awsconfig from './aws-exports';
+Amplify.configure(awsconfig);
+
 import Vue from 'vue'
 import App from './App.vue'
 import './registerServiceWorker'
