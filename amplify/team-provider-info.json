@@ -16,5 +16,23 @@
         "madakaherigithubio": {}
       }
     }
+  },
+  "main": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-madakaherigithubio-main-83431-authRole",
+      "UnauthRoleArn": "arn:aws:iam::279352010423:role/amplify-madakaherigithubio-main-83431-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::279352010423:role/amplify-madakaherigithubio-main-83431-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-madakaherigithubio-main-83431-deployment",
+      "UnauthRoleName": "amplify-madakaherigithubio-main-83431-unauthRole",
+      "StackName": "amplify-madakaherigithubio-main-83431",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:279352010423:stack/amplify-madakaherigithubio-main-83431/2c15f160-8b67-11eb-bbdf-0e186d4496bb",
+      "AmplifyAppId": "dalg2itz7a3ey"
+    },
+    "categories": {
+      "auth": {
+        "madakaherigithubio": {}
+      }
+    }
   }
 }

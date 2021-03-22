@@ -1,0 +1,90 @@
+/* eslint-disable */
+// this is an auto generated file. This will be overwritten
+
+export const onCreatePostCategory = /* GraphQL */ `
+  subscription OnCreatePostCategory {
+    onCreatePostCategory {
+      id
+      name
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const onUpdatePostCategory = /* GraphQL */ `
+  subscription OnUpdatePostCategory {
+    onUpdatePostCategory {
+      id
+      name
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const onDeletePostCategory = /* GraphQL */ `
+  subscription OnDeletePostCategory {
+    onDeletePostCategory {
+      id
+      name
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const onCreatePost = /* GraphQL */ `
+  subscription OnCreatePost {
+    onCreatePost {
+      id
+      PostType
+      PostContentType
+      postCategoryId
+      createdAt
+      updatedAt
+      data
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const onUpdatePost = /* GraphQL */ `
+  subscription OnUpdatePost {
+    onUpdatePost {
+      id
+      PostType
+      PostContentType
+      postCategoryId
+      createdAt
+      updatedAt
+      data
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const onDeletePost = /* GraphQL */ `
+  subscription OnDeletePost {
+    onDeletePost {
+      id
+      PostType
+      PostContentType
+      postCategoryId
+      createdAt
+      updatedAt
+      data
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
