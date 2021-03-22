@@ -57,14 +57,19 @@
             </v-list-item-content>
           </v-list-item>
         </v-card-actions>
-        <v-card-text class="text-caption">
-          性別：男 / 出身：大阪府 / 血液型：O型<br>
-          大学卒業後に上京。28歳までDTMで主に小劇団の劇伴を請負いながら音楽活動をし、以降ランサーズでWeb系フリーランスを少々。
-          33歳から元ランサーズのお客様の会社に就職。現在に至る。
-        </v-card-text>
       </v-card>
       <v-divider></v-divider>
     </template>
+
+    <v-card flat color="transparent">
+      <v-card-text class="text-caption">
+        性別：男 / 出身：大阪府 / 血液型：O型<br>
+        大学卒業後に上京。28歳までDTMで主に小劇団の劇伴を請負いながら音楽活動をし、以降ランサーズでWeb系フリーランスを少々。
+        33歳から元ランサーズのお客様の会社に就職。現在に至る。
+      </v-card-text>
+    </v-card>
+
+    <v-divider></v-divider>
 
     <v-list
       dense
@@ -140,6 +145,8 @@
       </v-list-item>
     </v-list>
 
+    <v-divider></v-divider>
+
     <v-list
       dense
       nav
@@ -159,6 +166,7 @@
     </v-list>
 
     <template v-slot:append>
+      <v-divider></v-divider>
       <aside class="text-center pa-4">
         <v-btn small @click="frame_isDarkMode = !frame_isDarkMode">
           <v-icon small>mdi-brightness-6</v-icon>

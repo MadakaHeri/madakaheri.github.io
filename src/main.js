@@ -1,3 +1,8 @@
+import axios from 'axios'
+import lodash from 'lodash'
+window.axios = axios
+window._ = lodash
+
 import Vue from 'vue'
 import App from './App.vue'
 import './registerServiceWorker'

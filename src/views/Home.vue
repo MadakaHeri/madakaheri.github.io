@@ -101,5 +101,10 @@
 <script>
 export default {
   name: 'Home',
+  async mounted(){
+    const { data } = await axios.get('https://platform.twitter.com/widgets.js')
+    const widgetScript = Function(data)
+    widgetScript()
+  },
 }
 </script>
