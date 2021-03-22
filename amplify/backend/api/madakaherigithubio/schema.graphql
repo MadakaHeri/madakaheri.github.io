@@ -14,14 +14,14 @@ enum PostContentType {
   IMAGE
 }
 
-type PostCategory @model @auth(rules: [{allow: public, operations: [read]}]) {
+type PostCategory @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String!
   createdAt: AWSDateTime!
   updatedAt: AWSDateTime
 }
 
-type Post @model @key(name: "byPostCategory", fields: ["postCategoryId"]) @auth(rules: [{allow: public, operations: [read]}]) {
+type Post @model @key(name: "byPostCategory", fields: ["postCategoryId"]) @auth(rules: [{allow: public}]) {
   id: ID!
   PostType: PostType!
   PostContentType: PostContentType!
@@ -30,3 +30,4 @@ type Post @model @key(name: "byPostCategory", fields: ["postCategoryId"]) @auth(
   updatedAt: AWSDateTime
   data: String
 }
+ 

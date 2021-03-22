@@ -21,8 +21,18 @@
 </template>
 
 <script>
+import { DataStore } from '@aws-amplify/datastore';
+import { Post } from '@/models';
 export default {
 
+  async created(){
+    const models = await DataStore.query(Post);
+    console.log(models);
+  },
+  
+  data: () => ({
+    posts: [],
+  }),
   computed: {
     breadcrumbs(){
       return [
