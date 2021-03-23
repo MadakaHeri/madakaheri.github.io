@@ -89,7 +89,24 @@
     <v-row>
       <v-col class="d-flex justify-center">
         <v-card>
-          <v-card-text>
+          <v-card-text v-show="isLoading">
+            <div class="d-flex align-center justify-center" style="width: 400px;height: 400px;">
+              <aside class="text-center" style="width: 200px">
+                <div>
+                  <v-icon x-large color="#1da1f2">mdi-twitter</v-icon>
+                </div>
+                <div class="mt-6">
+                  <v-progress-linear
+                    color="#1da1f2"
+                    indeterminate
+                    rounded
+                    height="6"
+                  ></v-progress-linear>
+                </div>
+              </aside>
+            </div>
+          </v-card-text>
+          <v-card-text v-show="!isLoading">
             <a class="twitter-timeline" data-lang="ja" data-width="400" data-theme="dark" href="https://twitter.com/MadakaHeri?ref_src=twsrc%5Etfw">Tweets by MadakaHeri</a>
           </v-card-text>
         </v-card>
@@ -102,9 +119,15 @@
 export default {
   name: 'Home',
   async mounted(){
+    this.isLoading = true
     const { data } = await axios.get('https://platform.twitter.com/widgets.js')
     const widgetScript = Function(data)
     widgetScript()
+    await new Promise(r => setTimeout(r, 800))
+    this.isLoading = false
   },
+  data: () => ({
+    isLoading: true,
+  }),
 }
 </script>

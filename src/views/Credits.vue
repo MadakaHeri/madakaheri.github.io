@@ -77,6 +77,9 @@
             <v-btn text href="https://momentjs.com" target="_brank">
               Moment.js
             </v-btn>
+            <v-btn text href="https://marked.js.org" target="_brank">
+              Marked
+            </v-btn>
           </div>
         </section>
         <section class="my-10">

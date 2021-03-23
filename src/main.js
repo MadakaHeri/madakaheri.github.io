@@ -1,7 +1,10 @@
 import axios from 'axios'
 import lodash from 'lodash'
+import moment from 'moment-timezone'
 window.axios = axios
 window._ = lodash
+window.moment = moment
+moment.tz.setDefault("Asia/Tokyo")
 
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import awsconfig from './aws-exports';
