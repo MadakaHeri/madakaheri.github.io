@@ -1,9 +1,15 @@
+<style lang="scss">
+@import '@/styles/style.scss'
+</style>
+
 <template>
   <v-app>
     <NavBar></NavBar>
     <HeadBar></HeadBar>
     <v-main>
-      <router-view></router-view>
+
+      <router-view/>
+
     </v-main>
   </v-app>
 </template>

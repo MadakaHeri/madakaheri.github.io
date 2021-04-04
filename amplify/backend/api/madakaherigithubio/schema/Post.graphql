@@ -1,0 +1,64 @@
+enum PostType {
+  ARTICLE
+  MESSAGE
+  REPLY
+  SHARE
+  GOOD
+  BAD
+  CLIP
+}
+
+enum PostContentType {
+  MARKDOWN
+  TEXT
+  MOVIE
+  SOUND
+  IMAGE
+}
+
+# Query Patterns
+# - byChannel: 基本はチャネル指定の新着順
+# - byTag: ハッシュタグ検索（単一）
+type Post @model
+@auth(rules: [{allow: public}])
+# @key(name: "byPostChannel", fields: ["postChannelId", "createdAt"], queryField: "PostbyPostChannel")
+{
+  id: ID!
+  chainPostId: ID
+  PostType: PostType!
+  PostContentType: PostContentType!
+  postChannelId: ID!
+  title: String
+  desc: String
+  data: String
+  twitter: AWSURL
+  github: AWSURL
+  channel: PostChannel @connection(fields: ["postChannelId"])
+  tags: [PostPostTag] @connection(keyName: "byPost", fields: ["id"])
+  createdAt: AWSDateTime!
+}
+
+type PostChannel @model
+@auth(rules: [{allow: public}]) {
+  id: ID!# name
+  twitter: AWSURL
+}
+
+type PostTag @model
+@auth(rules: [{allow: public}]) {
+  id: ID!# name
+  twitter: AWSURL
+  posts: [PostPostTag] @connection(keyName: "byPostTag", fields: ["id"])
+}
+
+type PostPostTag
+@model(queries: null)
+@auth(rules: [{allow: public}])
+@key(name: "byPost", fields: ["postID", "postTagID"])
+@key(name: "byPostTag", fields: ["postTagID", "postID"]) {
+  id: ID!
+  postID: ID!
+  postTagID: ID!
+  post: Post! @connection(fields: ["postID"])
+  postTag: PostTag! @connection(fields: ["postTagID"])
+}
