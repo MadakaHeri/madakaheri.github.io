@@ -120,7 +120,6 @@
       <v-subheader>PROJECTS</v-subheader>
       <v-list-item
         link
-        disabled
         to="/sns"
       >
         <v-list-item-icon>
