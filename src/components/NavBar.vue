@@ -113,7 +113,7 @@
     
     <v-divider></v-divider>
 
-    <v-list
+    <!-- <v-list
       dense
       nav
     >
@@ -153,9 +153,9 @@
           <v-list-item-title>飛行機を作りたい！</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
-    </v-list>
+    </v-list> 
 
-    <v-divider></v-divider>
+    <v-divider></v-divider> -->
 
     <v-list
       dense

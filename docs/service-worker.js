@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.054283625a82d7b6bf34fe6d6bf2d83d.js"
+  "/precache-manifest.c400be16b1d29d1b027101bff6f971a7.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "madakaheri"});
