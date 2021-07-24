@@ -1,0 +1,44 @@
+type Hotel
+@model
+@searchable
+@auth(rules: [{allow: public}])
+{
+  id: ID!
+  name: String!
+}
+
+type Plan
+@model
+@searchable
+@auth(rules: [{allow: public}])
+{
+  id: ID!
+  hotelId: ID!
+  name: String!
+  # Hotel: Hotel @connection(fields: ["hotelId"])
+}
+
+type Room
+@model
+@searchable
+@auth(rules: [{allow: public}])
+{
+  id: ID!
+  hotelId: ID!
+  name: String!
+  # Hotel: Hotel @connection(fields: ["hotelId"])
+}
+
+type Price
+@model
+@searchable
+@auth(rules: [{allow: public}])
+{
+  id: ID!
+  planId: ID!
+  roomId: ID!
+  price: Int!
+  date: AWSDate!
+  # Plan: Plan @connection(fields: ["planId"])
+  # Room: Room @connection(fields: ["roomId"])
+}

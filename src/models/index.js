@@ -7,6 +7,8 @@ const PostType = {
   "MESSAGE": "MESSAGE",
   "REPLY": "REPLY",
   "SHARE": "SHARE",
+  "GOOD": "GOOD",
+  "BAD": "BAD",
   "CLIP": "CLIP"
 };
 
@@ -18,11 +20,18 @@ const PostContentType = {
   "IMAGE": "IMAGE"
 };
 
-const { PostCategory, Post } = initSchema(schema);
+const { Hotel, Plan, Room, Price, Post, PostChannel, PostPostTag, PostTag, User } = initSchema(schema);
 
 export {
-  PostCategory,
+  Hotel,
+  Plan,
+  Room,
+  Price,
   Post,
+  PostChannel,
+  PostPostTag,
+  PostTag,
+  User,
   PostType,
   PostContentType
 };
