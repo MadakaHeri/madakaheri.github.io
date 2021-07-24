@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: madakaheri.github.io
+Token: 21b1d564c66807c52d1bf54d3b25d3909718f6fac329dd1081632c35506a50c3
