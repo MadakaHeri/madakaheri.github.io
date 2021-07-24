@@ -1,5 +1,9 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
+    "revision": "dc7b912fe6d78c384a340d17ea715579",
+    "url": "/.well-known/brave-rewards-verification.txt"
+  },
+  {
     "revision": "2aa31425f4934435b7c0",
     "url": "/css/chunk-vendors.2beaf15a.css"
   },
