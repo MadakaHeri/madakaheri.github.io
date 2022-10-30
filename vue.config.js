@@ -8,5 +8,5 @@ module.exports = defineConfig({
     themeColor: '#FFDB00',
   },
 
-  outputDir: 'docs'
+  outputDir: 'dist',
 })
