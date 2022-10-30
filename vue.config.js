@@ -7,4 +7,6 @@ module.exports = defineConfig({
     name: 'MadakaHeri',
     themeColor: '#FFDB00',
   },
+
+  outputDir: 'docs'
 })
