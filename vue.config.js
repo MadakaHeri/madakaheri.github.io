@@ -1,5 +1,10 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
-  transpileDependencies: true,
-  lintOnSave: false
+  transpileDependencies: ['vuetify'],
+  lintOnSave: false,
+
+  pwa: {
+    name: 'MadakaHeri',
+    themeColor: '#FFDB00',
+  },
 })
