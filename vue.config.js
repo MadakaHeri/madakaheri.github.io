@@ -6,9 +6,6 @@ module.exports = defineConfig({
   pwa: {
     name: 'MadakaHeri',
     themeColor: '#FFDB00',
-    iconPaths: {
-      favicon32: 'favicon.ico',
-    },
   },
 
   outputDir: 'dist',
