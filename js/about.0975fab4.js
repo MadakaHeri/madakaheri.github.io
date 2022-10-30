@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkmadakaheri_github_io"]=self["webpackChunkmadakaheri_github_io"]||[]).push([[443],{1272:function(t,u,a){a.r(u),a.d(u,{default:function(){return l}});var i=function(){var t=this;t._self._c;return t._m(0)},n=[function(){var t=this,u=t._self._c;return u("div",{staticClass:"about"},[u("h1",[t._v("This is an about page")])])}],e=a(1001),s={},r=(0,e.Z)(s,i,n,!1,null,null,null),l=r.exports}}]);
+//# sourceMappingURL=about.0975fab4.js.map
