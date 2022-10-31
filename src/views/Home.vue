@@ -7,6 +7,9 @@
       &:nth-child(even) {
         background-color: rgb(253, 252, 243);
       }
+      & > .container {
+        max-width: 1184px;
+      }
     }
   }
 </style>
@@ -17,28 +20,31 @@
       <v-parallax src="@/assets/bg_7765.png" height="600">
         <v-row align="center" justify="center" no-gutters dense>
           <v-col class="text-center black--text" cols="12">
-            <v-avatar size="200">
+            <v-avatar size="160">
               <img src="@/assets/avatar.png" alt="Madaka Heri" />
             </v-avatar>
             <h1 class="text-h4 font-weight-bold mt-4">マダカ ヘリ</h1>
             <h4 class="subheading mt-2">Fullstack Web Enginner</h4>
           </v-col>
         </v-row>
+        <section
+          class="section py-4 mx-n4"
+          style="background-color: rgba(0, 0, 0, 0.5)"
+        >
+          <v-container fill-height>
+            <v-row>
+              <v-col class="text-center">
+                <h3>フロントを大切にするWebフルスタック</h3>
+                <v-icon color="pink" size="40" class="my-4">mdi-heart</v-icon>
+                <div class="text-xs-left">
+                  どこまで行っても主戦場はフロントです。<br />
+                  どうしようもないデータベース、メンテナンス不能なコードの復旧に自信あり！
+                </div>
+              </v-col>
+            </v-row>
+          </v-container>
+        </section>
       </v-parallax>
-    </section>
-    <section class="section py-16">
-      <v-container fill-height>
-        <v-row>
-          <v-col class="text-center">
-            <h3>フロントを大切にするWebフルスタック</h3>
-            <v-icon color="pink" size="40" class="my-4">mdi-heart</v-icon>
-            <p class="text-xs-left">
-              どこまで行っても主戦場はフロントです。<br />
-              どうしようもないデータベース、メンテナンス不能なコードの復旧に自信あり！
-            </p>
-          </v-col>
-        </v-row>
-      </v-container>
     </section>
     <section class="section">
       <v-container>
@@ -95,7 +101,7 @@
       <v-container>
         <v-row>
           <v-col cols="12" sm="6" md="4">
-            <v-card height="208" tag="section">
+            <v-card outlined height="208" tag="section">
               <v-card-title>Web Application Works</v-card-title>
               <v-card-subtitle>
                 <v-icon small color="success">mdi-check-circle</v-icon>
@@ -118,7 +124,7 @@
             </v-card>
           </v-col>
           <v-col cols="12" sm="6" md="4">
-            <v-card height="208" tag="section">
+            <v-card outlined height="208" tag="section">
               <v-card-title>Service/API Works</v-card-title>
               <v-card-subtitle>
                 <v-icon small color="success">mdi-check-circle</v-icon>
@@ -141,7 +147,7 @@
             </v-card>
           </v-col>
           <v-col cols="12" sm="6" md="4">
-            <v-card height="208" tag="section">
+            <v-card outlined height="208" tag="section">
               <v-card-title>System Architect</v-card-title>
               <v-card-subtitle>
                 <v-icon small color="success">mdi-check-circle</v-icon>
@@ -166,7 +172,7 @@
       </v-container>
     </section>
     <v-footer dark class="py-5">
-      <v-container>
+      <v-container style="max-width: 1184px">
         <h4>オープンソース・プロジェクト</h4>
         <v-row class="mt-2">
           <v-col cols="12" sm="6">
@@ -215,7 +221,9 @@
               </v-card-title>
               <v-card-text>
                 作ってるうちに目的を失ったプロジェクト。<br />
-                作りかけ。
+                <ul>
+                  <li>作りかけ。</li>
+                </ul>
               </v-card-text>
             </v-card>
           </v-col>
@@ -226,19 +234,19 @@
             <v-btn
               icon
               outlined
-              href="https://github.com/madakaheri"
+              href="https://twitter.com/MadakaHeri"
               target="_blank"
             >
-              <v-icon>mdi-github</v-icon>
+              <v-icon>mdi-twitter</v-icon>
             </v-btn>
             <v-btn
               icon
               outlined
-              href="https://twitter.com/MadakaHeri"
+              href="https://github.com/madakaheri"
               target="_blank"
               class="ml-2"
             >
-              <v-icon>mdi-twitter</v-icon>
+              <v-icon>mdi-github</v-icon>
             </v-btn>
           </v-col>
         </v-row>
